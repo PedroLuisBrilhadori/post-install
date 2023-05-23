@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Silently exec a command line passed as argument
+errorsRedirect=""
+
+if [ -z "$1" ]; then
+   echo "Please, don't joke me..."
+   exit 1
+fi
+
+cmdLine="$1 >/dev/null"
+
+# if passed a second parameter, errors will be hidden
+if [ -n "$2" ]; then
+   cmdLine="$cmdLine 2>&1"
+fi
+
+eval "$cmdLine &"
