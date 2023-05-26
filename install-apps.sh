@@ -21,7 +21,7 @@ sudo pacman -Rns firefox
 # visual studio code 
 # discord 
 # steam
-yay -S google-chrome visual-studio-code-bin discord steam exa bat github-cli
+yay -S google-chrome visual-studio-code-bin discord steam exa bat github-cli vim docker docker-compose mouse_m908
 
 ## run script to config all installed apps
 . ~/scripts/apps.config.sh
