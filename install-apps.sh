@@ -12,16 +12,17 @@ makepkg -si
 
 
 ## remove unsed apps 
-#
 sudo pacman -Rns firefox
 
 
-## install my apps
-# chrome
-# visual studio code 
-# discord 
-# steam
-yay -S google-chrome visual-studio-code-bin discord steam exa bat github-cli vim docker docker-compose mouse_m908
+## install window apps
+
+yay -S google-chrome visual-studio-code-bin discord steam mouse_m908
+
+## install cli apps
+
+yay -S exa bat github-cli vim docker docker-compose
+
 
 ## run script to config all installed apps
 . ~/scripts/apps.config.sh
