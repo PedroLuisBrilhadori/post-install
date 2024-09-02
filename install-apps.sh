@@ -4,7 +4,7 @@ sudo pacman -S base-devel go
 
 ## clone yay repository
 cd /tmp
-git clone https://github.com/Jguer/yay.git
+git clone https://aur.archlinux.org/yay.git
 cd yay 
 
 # build and install yay
@@ -17,7 +17,7 @@ sudo pacman -Rns firefox
 
 ## install window apps
 
-yay -S google-chrome visual-studio-code-bin discord steam mouse_m908
+yay -S microsoft-edge-stable-bin  google-chrome visual-studio-code-bin discord steam mouse_m908 beekeeper-studio-bin insomnia 
 
 ## install cli apps
 
